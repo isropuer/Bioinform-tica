@@ -102,7 +102,7 @@ archivos a ignorar. Por ejemplo:
 data/
 *.bam
 ```
-
+nano .gitignore para abrir todo lo que tienes dentro del git ignore.
 Estas tres líneas indican:
 
 1. Ignora el archivo `.gitignore` (en general, recomendable).
