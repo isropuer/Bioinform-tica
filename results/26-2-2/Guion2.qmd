@@ -55,7 +55,7 @@ podemos darle cualquier nombre. Tratándose de una "rama principal", sería
 natural llamarla "tronco", "cepa" o, en valenciano, "soca". Para ello:
 
 ```
-git config --global init.defaultBranch soca
+git config --global init.defaultBranch soca (Puedes tener varias ramas, git config te muestra en cual estas. Con git branch -a te salen todas las ramas que tienes).
 ```
 
 Puedes ver la configuración actual con `git config --list`.
@@ -65,7 +65,7 @@ Desde la carpeta principal, en el terminal ejecutamos `git init`. Se habrá
 creado una carpeta oculta, `.git`. A partir de ese momento, Git observará las
 modificaciones de todos los archivos en esa carpeta y **en todas sus subcarpetas**.
 
-Es importante no crear repositorios en subcarpetas de un repositorio previo.
+Es importante no crear repositorios en subcarpetas de un repositorio previo (La creas encima de las carpetas y cosas que quieres que te controle y ordene).
 
 Una vez creado el repositorio, puedes usar el comando `git status`, para
 comprobar el estado de tus archivos.
