@@ -1,0 +1,273 @@
+    1  sudo apt update
+    2  sudo apt install git build-essential autoconf automake libtool python3 r-base
+    3  apt install emboss exonerate wget muscle
+    4  apt install emboss exonerate wget muscle
+    5  pwd
+    6  cd ~
+    7  cd $HOME
+    8  ls
+    9  ls -1
+   10  ls -lh
+   11  cd Documentos/
+   12  cd ~
+   13  cd Documentos/
+   14  cd..
+   15  cd ..
+   16  cd Documentos/
+   17  cd /home/ isropuer
+   18  cd /home/
+   19  cd ..
+   20  cd ~
+   21  cd Documentos/
+   22  mkdir Z
+   23  ls -1
+   24  rm -r Z
+   25  mkdir Bioinformática
+   26  cd Bioinformática/
+   27  mkdir Trabajos
+   28  cd Trabajos/
+   29  cd ..
+   30  cd Bioinformática/
+   31  mkdir doc
+   32  mkdir data
+   33  mkdir results
+   34  rm -r Trabajos
+   35  cd results/
+   36  mkdir 2026-01-29
+   37  mkdir README.md
+   38  cd 2026-01-29/
+   39  cp guio-copia guio-es
+   40  cp guio-es guio-copia
+   41  ls -1 /mnt/c/Users/isropuer/Downloads
+   42  touch copia
+   43  ls -1 /mnt
+   44  ls -1 /mnt/ c
+   45  ls -1 /mnt/c
+   46  cp /mnt/c/Users
+   47  ls -1 /mnt/c/Users
+   48  ls -1 /mnt/c/Users/rodri
+   49  ls -1 /mnt/c/Users/rodri/Downloads
+   50  cp /mnt/c/Users/rodri/Downloads/guio-es.Qmd 2026-01-29/guion.qmd
+   51  cp /mnt/c/Users/rodri/Downloads/guio-es.Qmd results/2026-01-29/README.qmd
+   52  cp /mnt/c/Users/rodri/Downloads/guio-es.Qmd home/isropuer/Bioinformática/results/2026-01-29/README.qmd
+   53  cp /mnt/c/Users/rodri/Downloads/guio-es.Qmd home/isropuer/Documentos/Bioinformática/results/2026-01-29/README.qmd
+   54  cp /mnt/c/Users/rodri/Downloads/guio-es.Qmd /home/isropuer/Documentos/Bioinformática/results/2026-01-29/README.qmd
+   55  ls 
+   56  rm -r copia
+   57  ls
+   58  cp ~/Descargas/guio-es.qmd /home/isropuer/Documentos/Bioinformática/results/2026-01-29/copia2.qmd
+   59  cp ~/Downloads/guio-es.Qmd /home/isropuer/Documentos/Bioinformática/results/2026-01-29/copia2.qmd
+   60  cp ~/Descargas/guio-es.Qmd /home/isropuer/Documentos/Bioinformática/results/2026-01-29/copia2.qmd
+   61  cd ~
+   62  cd Documentos/Bioinformática/results/2026-01-29/
+   63  cd 
+   64  apt install emboss exonerate wget muscle
+   65  y
+   66  apt install emboss exonerate wget muscle
+   67  yes
+   68  ls
+   69  whoami
+   70  sudo apt install emboss exonerate wget muscle
+   71  git --version
+   72  cd Documentos/Bioinformática/results/
+   73  mkdir 26-2-2
+   74  cd 26-2-2
+   75  cd home
+   76  cd ~
+   77  cd Documentos/Bioinformática/results/26-2-2/
+   78  touch Guion2.qmd
+   79  git config --show
+   80  git config --global core.editor "nano -w"
+   81  git config --global core.editor nano -w
+   82  git config --global init.defaultBranch tronco
+   83  git config --list
+   84  cd ~
+   85  git init
+   86  git status
+   87  git add <Documentos>
+   88  git add Documentos
+   89  git status
+   90  git commit -m Iniciada la primera práctica, aunque el alineamiento no está hecho todavía.
+   91  git commit -m "Iniciada la primera práctica, aunque el alineamiento no está hecho todavía."
+   92  isropuer
+   93  git config --global user.name isropuer
+   94  git commit -m "Iniciada la primera práctica, aunque el alineamiento no está hecho todavía."
+   95  git status
+   96  git add .bash_history 
+   97  git add .bash_logout 
+   98  git add .bashrc
+   99  git add .cache/
+  100  git add .gitconfig
+  101  git add .lesshst 
+  102  git add .motd_shown 
+  103  git add .profile 
+  104  git add .sudo_as_admin_successful 
+  105  git add .wget-hsts 
+  106  git config --global user.email isropuer@alumni.uv.es
+  107  git config
+  108  git status
+  109  git add .gitconfig 
+  110  git status
+  111  git commit -m "Iniciada la primera práctica, aunque el alineamiento no está hecho todavía."
+  112  git list
+  113  git --list
+  114  git config --list
+  115  git rm --cached .bash_logout
+  116  git status
+  117  git rm --cached Documentos/
+  118  cd Documentos/Bioinformática/
+  119  git --version
+  120  git config --list
+  121  git init
+  122  git status
+  123  git add results/
+  124  git status
+  125  git commit -m "Iniciada la primera práctica, aunque el alineamiento no está hecho todavía."
+  126  git status
+  127  git log
+  128  git status
+  129  git commit -m "Después de haber creado el repositorio, iniciada la segunda práctica"
+  130  git status
+  131  git add results/26-2-2/Guion2.qmd 
+  132  git status
+  133  touch .gitignore
+  134  ls
+  135  git status
+  136  git log
+  137  nano .gitignore
+  138  nano Guion1.qmd
+  139  nano README
+  140  nano README.qmd
+  141  ls
+  142  cd results/26-01-29
+  143  cd results/2026-01-29
+  144  nano README.qmd
+  145  cd ~
+  146  cd Documentos/Bioinformática/
+  147  git remote add origin https://github.com/isropuer/Bioinform-tica.git
+  148  git push -u origin tronco
+  149  cd ~
+  150  ssh-keygen -t ed25519 -C "isropuer@alumni.uv.es"
+  151  ls .ssh
+  152  cat .ssh/id_ed25519.pub
+  153  git push -u origin tronco
+  154  cd Documentos/Bioinformática/
+  155  git push -u origin tronco
+  156  git remote add origin git@github.com:isropuer/Bioinform-tica.git
+  157  git remote rm origin
+  158  git remote add origin git@github.com:isropuer/Bioinform-tica.git
+  159  git push -u origin tronco
+  160  git pull
+  161  git commit -m "Después de haber creado el repositorio, iniciada la segunda práctica"
+  162  git status
+  163  git config
+  164  git pull
+  165  git status
+  166  git add results/26-2-2/Guion2.qmd 
+  167  git status
+  168  git commit -m "Después de haber creado el repositorio, iniciada la segunda práctica"
+  169  cd Documentos/Bioinformática/results/
+  170  mkdir 2026-02-04
+  171  cd 2026-02-04
+  172  touch apuntes-T1
+  173  cd Documentos/Bioinformática/results/
+  174  mkdir 2026-02-10
+  175  cd 2026-02-10
+  176  touch guion3.qmd
+  177  cd Documentos/Bioinformática/results/2026-02-10
+  178  wget http://opengene.org/fastp/fastp
+  179  chmod a+x ./fastp
+  180  git clone https://github.com/lh3/bwa.git
+  181  cd bwa
+  182  make
+  183  apt install samtools
+  184  sudo apt install samtools
+  185  cd samtools-1.x
+  186  cd ~
+  187  cd samtools-1.23/
+  188  cd samtools-1.x
+  189  cd ~
+  190  cd samtools-1.x
+  191  cd samtools-1.23/
+  192  ./configure --prefix=/home/isropuer/
+  193  sudo ./configure --prefix=/home/isropuer/
+  194  configure --prefix=/home/isropuer/
+  195  /configure --prefix=/home/isropuer/
+  196  cd ~
+  197  mkdir bin
+  198  cd samtools-1.23/
+  199  ./configure --prefix=/home/isropuer/bin
+  200  sudo ./configure --prefix=/home/isropuer/bin
+  201  ls -lh
+  202  cd~
+  203  cd ~
+  204  wget https://github.com/samtools/samtools/releases/download/1.23/samtools-1.23.tar.bz2
+  205  sudo apt install extract
+  206  extract samtools-1.23.tar.bz2 
+  207  ls
+  208  cd samtools-1.23/
+  209  ./configure --prefix=/home/isropuer/bin
+  210  cd samtools-1.23/
+  211  ./configure --prefix=/home/isropuer/bin
+  212  ls
+  213  cd ~
+  214  tar -xf samtools-1.23.tar.bz2 
+  215  ls
+  216  cd samtools-1.23/
+  217  ./configure --prefix=/home/isropuer/bin
+  218  cd ~
+  219  wget https://github.com/samtools/bcftools/releases/download/1.23/bcftools-1.23.tar.bz2
+  220  tar -xf bcftools-1.23.tar.bz2 
+  221  cd b
+  222  cd bcftools-1.23/
+  223  ./configure --prefix=/home/isropuer/bin
+  224  cd ~
+  225  wget https://github.com/samtools/htslib/releases/download/1.23/htslib-1.23.tar.bz2
+  226  tar -xf htslib-1.23.tar.bz2 
+  227  cd htslib-1.23/
+  228  ./configure --prefix=/home/isropuer/bin
+  229  cd ~
+  230  cd samtools-1.23/
+  231  make
+  232  make install
+  233  cd ~
+  234  cd bcftools-1.23/
+  235  make
+  236  make install
+  237  cd :
+  238  cd ..
+  239  cd htslib-1.23/
+  240  make
+  241  make install
+  242  cd ..
+  243  cd Documentos/Bioinformática/results/2026-02-10
+  244  if [ ! -e DRR025089_1.fastq.gz ]; then
+   wget -o /dev/null         ftp://ftp.sra.ebi.ac.uk/vol1/fastq/DRR025/DRR025089/DRR025089_1.fastq.gz; fi
+  245  if [ ! -e DRR025089_2.fastq.gz ]; then    wget -o /dev/null         ftp://ftp.sra.ebi.ac.uk/vol1/fastq/DRR025/DRR025089/DRR025089_2.fastq.gz; fi
+  246  ls 
+  247  zless DRR025089_1.fastq.gz 
+  248  gunzip -c DRR025089_1.fastq.gz | wc -l
+  249  gunzip -c DRR025089_2.fastq.gz | wc -l
+  250  if [ ! -e referencia.fa ]; then    wget -o /dev/null -O referencia.fa         https://www.ebi.ac.uk/ena/browser/api/fasta/GCA_042137995.2 ; fi
+  251  ls
+  252  zless referencia.fa 
+  253  wc -l referencia.fa 
+  254  wc referencia.fa 
+  255  if [ ! -e fastp.html ]; then
+   fastp -i DRR025089_1.fastq.gz          -o DRR025089_1_clean.fastq          -I DRR025089_2.fastq.gz          -O DRR025089_2_clean.fastq          --merge          --merged_out DRR025089_m_clean.fastq; fi
+  256  sudo apt install fastp
+  257  if [ ! -e fastp.html ]; then    fastp -i DRR025089_1.fastq.gz          -o DRR025089_1_clean.fastq          -I DRR025089_2.fastq.gz          -O DRR025089_2_clean.fastq          --merge          --merged_out DRR025089_m_clean.fastq; fi
+  258  fastp -h
+  259  fastp
+  260  fastp.html
+  261  fastp -h referencia.fa 
+  262  fastp -h DRR025089_1.fastq.gz
+  263  fastp -h DRR025089_1.fastq.gz referencia.fa 
+  264  fastp DRR025089_1.fastq.gz 
+  265  ./fastp
+  266  fastp -h
+  267  grep ">" referencia.fa 
+  268  grep ">" DRR025089_1.fastq.gz 
+  269  fastp -h
+  270  history > Historial Práctica_3.txt
+  271  history > Historial_Práctica_3.txt
