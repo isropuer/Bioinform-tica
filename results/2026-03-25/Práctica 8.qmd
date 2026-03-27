@@ -2,6 +2,7 @@
 title: "Práctica 8. BLAST"
 author: Ismael Rodrigo Puerto
 format: html
+editor: visual
 ---
 
 ### Práctica 8. BLAST
@@ -12,7 +13,7 @@ Una estrategia habitual para identificar genes ortólogos es comprobar si cada u
 # Enmascarar e indexar los proteomas
 Puedes copiar estas órdenes a tu cuaderno de trabajo. Fíjate que deben ser ejecutadas en la carpeta adecuada.
 
-```{r}
+```{bash}
 if [ ! -e ../../data/buchnera.paa ]; then
    # Creamos un archivo para enmascarar zonas de baja complejidad:
    if [ ! -e buchnera_seg.asnb ]; then
@@ -35,7 +36,7 @@ fi
 ```
 
 
-```{r}
+```{bash}
 if [ ! -e ../../data/blochmannia.paa ]; then
    # Creamos un archivo para enmascarar zonas de baja complejidad:
    if [ ! -e blochmannia_seg.asnb ]; then
@@ -61,7 +62,7 @@ fi
 El objetivo es encontrar la proteína de Blochmannia ocreatus que más se parece a cada una de las proteínas de Buchnera aphidicola, y viceversa. Entonces, seleccionaremos las parejas de proteínas que sean recíprocamente las más similares una de otra, por ser más probablemente ortólogas. Otras relaciones de semejanza no recíprocas pueden ser debidas a la paralogía.
 
 *De Buchnera aphidicola hacia Blochmannia ocreatus*
-```{r}
+```{bash}
 blastp -query ../../data/buchnera.fa \
        -db ../../data/blochmannia \
        -out buc2blo.txt \
@@ -71,7 +72,7 @@ blastp -query ../../data/buchnera.fa \
 ```
 
 *De Blochmannia ocreatus hacia Buchnera aphidicola*
-```{r}
+```{bash}
 blastp -query ../../data/blochmannia.fa \
        -db ../../data/buchnera \
        -out blo2buc.txt \
@@ -114,12 +115,12 @@ Que el valor E sea bajo, lo que representaría que las secuencias son similares.
 ## Ejercicio 2. PSI-BLAST
 El PSI-BLAST nos permite identificar semejanzas sutiles, como las que existen entre miembros alejados de una superfamilia proteica. Para comprobarlo vamos a realizar una búsqueda a partir de cualquiera de las proteínas siguientes: Q9CC91, P39615, B1AJI8, P47343, Q5UPT2, Q6UDG6, A1AFY9, O59825 y P30314. Todas ellas están en Swissprot y pertenecen a una misma superfamilia. Sin embargo, un simple BLASTP con cualquiera de ellas no encuentra ninguna de las otras1. Comprobemos si con un PSI-BLAST lo conseguimos. A continuación lo intento a partir de P39615. Repite los pasos usando otra proteína de la lista como query y compara los resultados.
 
-```{r}
+```{bash}
 # Como Swissprot debería estar ya descargada en `../../data`, podemos sacar
 # de ahí la secuencia de la proteína escogida:
 # para hacer una búsqueda múltiple, introducimos esta línea inicial, para que sustituya donde aparece $proteina por todas las que introducimos en la lista
-for proteina in Q9CC91 P39615 B1AJI8 P47343 Q5UPT2 Q6UDG6 A1AFY9 O59825 P30314
-do
+   for proteina in Q9CC91 P39615 B1AJI8 P47343 Q5UPT2 Q6UDG6 A1AFY9 O59825 P30314;
+   do
    blastdbcmd -db ../../data/swissprot -entry $proteina -out $proteina.fa
 
 # Y ahora la usamos como query en psi-blast:
@@ -131,7 +132,7 @@ psiblast -db ../../data/swissprot \
          -inclusion_ethresh 0.001 \
          -num_iterations 7 \
          -matrix BLOSUM62
-done 
+  done
 ```
 
 *Consulta la ayuda de psiblast y asegúrate de entender para qué sirven los argumentos que hemos usado. Por ejemplo, ¿cuál es la diferencia entre -evalue y -inclusion_ethresh?¿Cómo harías que la búsqueda fuera más sensible todavía?*
