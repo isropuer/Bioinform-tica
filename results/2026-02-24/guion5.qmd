@@ -6,6 +6,7 @@ execute:
   output: true
   error: true
 engine: knitr
+bibliography: ../../doc/references.bib
 language:
    title-block-published: "Última actualización:"
    section-title-references: "Bibliografía"
@@ -132,6 +133,7 @@ En este caso estan los 5 pasos para la búsqueda en ENA. 1- Sobre que haces la b
 ```{r}
 curl_download('https://www.ebi.ac.uk/ena/portal/api/search?result=assembly&query=tax_tree(6157) AND genome_representation="full"&fields=version,tax_id,scientific_name,last_updated,base_count&limit=0',
               destfile = 'z1.txt')
+#Da error puesto que falta la función URLencode
 ```
 
 ```{r}
@@ -171,12 +173,12 @@ curl_download(URLencode(URL), destfile = 'z3.txt')
 ```{r}
 ADH <- read.table('z3.txt', sep = '\t', quote = "", header = TRUE)
 ```
-el separador en la tabla es el tabulador, el cual se marca con \t
-ADH$base_count para acceder solo a los valores para base_count. Si le añadimos summary nos da un resumen de este. Con esto sabemos las longitudes mínima, máxima, media, cuartiles...
+el separador en la tabla es el tabulador, el cual se marca con "\t"
+ADH\$base_count para acceder solo a los valores para base_count. Si le añadimos summary nos da un resumen de este. Con esto sabemos las longitudes mínima, máxima, media, cuartiles...
 Unique para que nos dé la lista de valores únicos de esa columna, en este caso saber cuantas espécies.
 1. ¿Cuántas secuencias hay con el término "alcohol dehydrogenase" en su descripción? 1258
 2. ¿Qué longitudes tienen? Lo que ponga en base_count. Entre 44 y 17499 pb, de media 839
-3. ¿De cuántas especies diferentes son estas secuencias? Lenght(unique(ADH$scientific_name))=308
+3. ¿De cuántas especies diferentes son estas secuencias? Lenght(unique(ADH\$scientific_name))=308
 4. ¿Cuándo se publicaron las más recientes? Lo que ponga en first_public max
 :::
 
